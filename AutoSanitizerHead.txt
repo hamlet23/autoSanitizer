@@ -11,18 +11,6 @@
 	|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|                 
         V 1.0 / März 2020 / Modul 242                           
 
-******************************************************************************
-			VARIANTE 1
-
- ->	Beim auslösen des Sensors wird die Pumpe für 0.01 Sekunden betätigen
-	und es werden 2 ml ausgegeben.
-
-    -	Behälter hat 2 Liter / 0.002 ml pro Betätigug = 1000 Betätigungen.
-
-    -	(Reale Pumpe hat ein minimum von 50ml/Sek.
-	Es wird nur mit einem Impuls gearbeitet.)
-==============================================================================
-
 ==============================================================================
 			VARIANTE 2
 
