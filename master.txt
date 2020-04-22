@@ -1,19 +1,18 @@
 #include <LiquidCrystal.h>
-
-int Pir = 9;
-int Led = 13;
-int ButtonValue9;
-int pirState = LOW;         
-int val = 0;
-int i = 0;
+#define pirPin 10
+int calibrationTime = 30;
+long unsigned int lowIn;
+long unsigned int pause = 5000;
+boolean lockLow = true;
+boolean takeLowTime;
+int PIRValue = 0;
+int i =0;
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-  
-void setup()
-{
-  pinMode(Led, OUTPUT); 
-  pinMode(Pir, INPUT);
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(pirPin, INPUT);
   lcd.begin(16, 2);
-//  lcd.print("DETECT "+String(pirState));
   lcd.print("Initializing");
   while(i<=100){
   		lcd.setCursor(0,1);
@@ -21,45 +20,38 @@ void setup()
     	lcd.setCursor(3,1);
     	lcd.print("%");
     	i++;
+    	
   	}
     delay(2000);
-    lcd.clear();
+  	lcd.clear();
 }
 
-void loop()
-{
-  ButtonValue9 = digitalRead(Pir); 
-  
-  val = digitalRead(Pir); 
-  if (val == HIGH)
-  {
-    digitalWrite(Led, HIGH); 
-    lcd.print("DETECT "+String(pirState));
-   
-    if (pirState == LOW)
-    {
-      
-      pirState = HIGH;
-    }
-  } 
-  	else
-  
-    digitalWrite(Led, LOW);
+void loop() {
+	PIRSensor();
+}
+
+void PIRSensor() {
+   if(digitalRead(pirPin) == HIGH) {
+      if(lockLow) {
+         PIRValue = 1;
+         lockLow = false;
+		 lcd.setCursor(0,0);
+         lcd.print("Motion detected.");
+         delay(50);
+      }
+      takeLowTime = true;
     
-    if (pirState == HIGH)
-    {
-      lcd.print("NO DETECT "+String(pirState));
-      pirState = LOW;
-    }
-  
-  if(ButtonValue9 == HIGH) 
-  {
-    digitalWrite(Led,HIGH); 
-  }
-  else
-  {
-    digitalWrite(Led,LOW); 
-  }
+   }
+   if(digitalRead(pirPin) == LOW) {
+      if(takeLowTime){
+         lowIn = millis();takeLowTime = false;
+      }
+      if(!lockLow && millis() - lowIn > pause) {
+         PIRValue = 0;
+         lockLow = true;
+         lcd.setCursor(0,0);
+         lcd.print("Motion ended.");
+         delay(50);
+      }
+   }
 }
-
-
