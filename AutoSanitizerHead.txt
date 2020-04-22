@@ -9,31 +9,29 @@
 	||G |||E |||O |||R |||G |||E |||& |||D |||I |||N |||O ||
 	||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
 	|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|                 
-        V 1.0 / März 2020 / Modul 242                           
+        V 1.0 / April 2020 / Modul 242                           
 
 ==============================================================================
 			Eigenschaft
 
- ->	Beim auslösen des Sensors wird ein Servo den Sprühkopf 2 mal drücken
+ ->	Beim auslösen des Sensors wird ein Servo den Sprühkopf 2x drücken
 	und es werden 2 ml ausgegeben.
 
-    -	Behälter hat 2 Liter / 0.002 ml pro Betätigug = 1000 Betätigungen.
+ ->	Behälter hat 2 Liter / 0.002 Liter pro Betätigug = 1000 Betätigungen.
 
-    -	(Realer Sprühkopf hat ein durchgang von 1 ml pro Betätigung.)
+ ->	(Realer Sprühkopf hat ein durchgang von 1 ml pro Betätigung.)
+ 
+ ->	Auf dem Display wird Inhalt und Füllstand angezeigt.
+
 ==============================================================================
 			Andere Eigenschaften
 
  ->	Zwei Knöpfe zum Reset des Füllstands und zum Ein- und Auszuschalten.
+ 
+ ->	Potenziometer zur Kontraststeuerung des Displays.(Uebernommen)
 
- ->	Der Sensor reagiert ab 2.5cm. Wir nutzen 5 cm.
-
- ->	Auf dem Display wird Inhalt und Füllstand angezeigt.
-
- ->	Potenziometer zur Kontrast steuerung des Displays.(Uebernommen)
-
- (->	Display ist mit einem Flachbandkabel verbunden.)
-
-
+ ->	Display ist mit einem Flachbandkabel verbunden.
+==============================================================================
 */
 
 
