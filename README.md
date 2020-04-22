@@ -2,7 +2,9 @@
 A automatic sanitizer dispenser that's realized on a Arduino Board
 
 ==============================================================================
+
 			Eigenschaft
+			===========
 
  ->	Beim auslösen des Sensors wird ein Servo den Sprühkopf 2x drücken
 	und es werden 2 ml ausgegeben.
@@ -14,11 +16,14 @@ A automatic sanitizer dispenser that's realized on a Arduino Board
  ->	Auf dem Display wird Inhalt und Füllstand angezeigt.
 
 ==============================================================================
+
 			Andere Eigenschaften
+			====================
 
  ->	Zwei Knöpfe zum Reset des Füllstands und zum Ein- und Auszuschalten.
  
  ->	Potenziometer zur Kontraststeuerung des Displays.(Uebernommen)
 
  ->	Display ist mit einem Flachbandkabel verbunden.
+ 
 ==============================================================================
