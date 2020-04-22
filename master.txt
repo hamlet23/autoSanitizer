@@ -4,7 +4,8 @@ int Pir = 9;
 int Led = 13;
 int ButtonValue9;
 int pirState = LOW;         
-int val = 0; 
+int val = 0;
+int i = 0;
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
   
 void setup()
@@ -13,6 +14,16 @@ void setup()
   pinMode(Pir, INPUT);
   lcd.begin(16, 2);
 //  lcd.print("DETECT "+String(pirState));
+  lcd.print("Initializing");
+  while(i<=100){
+  		lcd.setCursor(0,1);
+		  lcd.print(i);
+    	lcd.setCursor(3,1);
+    	lcd.print("%");
+    	i++;
+  	}
+    delay(2000);
+    lcd.clear();
 }
 
 void loop()
