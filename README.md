@@ -1,2 +1,2 @@
-# module242
+# autoSanitizer
 data for the exam on module 242
