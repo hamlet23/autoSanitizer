@@ -12,7 +12,7 @@
         V 1.0 / März 2020 / Modul 242                           
 
 ==============================================================================
-			VARIANTE 2
+			Eigenschaft
 
  ->	Beim auslösen des Sensors wird ein Servo den Sprühkopf 2 mal drücken
 	und es werden 2 ml ausgegeben.
@@ -32,12 +32,6 @@
  ->	Potenziometer zur Kontrast steuerung des Displays.(Uebernommen)
 
  (->	Display ist mit einem Flachbandkabel verbunden.)
-
-
-
-
-
-
 
 
 */
