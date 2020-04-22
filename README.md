@@ -15,11 +15,6 @@ A automatic sanitizer dispenser that's realized on a Arduino Board
  
  ->	Auf dem Display wird Inhalt und Füllstand angezeigt.
 
-==============================================================================
-
-			Andere Eigenschaften
-			====================
-
  ->	Zwei Knöpfe zum Reset des Füllstands und zum Ein- und Auszuschalten.
  
  ->	Potenziometer zur Kontraststeuerung des Displays.(Uebernommen)
