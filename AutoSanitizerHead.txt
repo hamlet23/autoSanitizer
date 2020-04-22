@@ -1,0 +1,59 @@
+/*
+	  ___        _          _____             _ _   _              
+	 / _ \      | |        /  ___|           (_) | (_)             
+	/ /_\ \_   _| |_ ___   \ `--.  __ _ _ __  _| |_ _ _______ _ __ 
+	|  _  | | | | __/ _ \   `--. \/ _` | '_ \| | __| |_  / _ \ '__|
+	| | | | |_| | || (_) | /\__/ / (_| | | | | | |_| |/ /  __/ |   
+	\_| |_/\__,_|\__\___/  \____/ \__,_|_| |_|_|\__|_/___\___|_|   
+	 ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+	||G |||E |||O |||R |||G |||E |||& |||D |||I |||N |||O ||
+	||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+	|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|                 
+        V 1.0 / März 2020 / Modul 242                           
+
+******************************************************************************
+			VARIANTE 1
+
+ ->	Beim auslösen des Sensors wird die Pumpe für 0.01 Sekunden betätigen
+	und es werden 2 ml ausgegeben.
+
+    -	Behälter hat 2 Liter / 0.002 ml pro Betätigug = 1000 Betätigungen.
+
+    -	(Reale Pumpe hat ein minimum von 50ml/Sek.
+	Es wird nur mit einem Impuls gearbeitet.)
+==============================================================================
+
+==============================================================================
+			VARIANTE 2
+
+ ->	Beim auslösen des Sensors wird ein Servo den Sprühkopf 2 mal drücken
+	und es werden 2 ml ausgegeben.
+
+    -	Behälter hat 2 Liter / 0.002 ml pro Betätigug = 1000 Betätigungen.
+
+    -	(Realer Sprühkopf hat ein durchgang von 1 ml pro Betätigung.)
+==============================================================================
+			Andere Eigenschaften
+
+ ->	Zwei Knöpfe zum Reset des Füllstands und zum Ein- und Auszuschalten.
+
+ ->	Der Sensor reagiert ab 2.5cm. Wir nutzen 5 cm.
+
+ ->	Auf dem Display wird Inhalt und Füllstand angezeigt.
+
+ ->	Potenziometer zur Kontrast steuerung des Displays.(Uebernommen)
+
+ (->	Display ist mit einem Flachbandkabel verbunden.)
+
+
+
+
+
+
+
+
+*/
+
+
+
+
