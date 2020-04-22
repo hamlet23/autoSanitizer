@@ -1,2 +1,2 @@
 # autoSanitizer
-data for the exam on module 242
+A automatic sanitizer dispenser that's realized on a Arduino Board
