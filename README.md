@@ -3,7 +3,7 @@ A automatic sanitizer dispenser that's realized on a Arduino Board
 
 ==============================================================================
 
-			Eigenschaften
+			##	Eigenschaften
 
  ->	Beim auslösen des Sensors wird ein Servo den Sprühkopf 2x drücken
 	und es werden 2 ml ausgegeben.
