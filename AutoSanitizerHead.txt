@@ -22,11 +22,11 @@
  ->	(Realer Sprühkopf hat ein durchgang von 1 ml pro Betätigung.)
  
  ->	Auf dem Display wird Inhalt und Füllstand angezeigt.
+ 
+ ->	Ein Knopf zum Reset des Füllstands.
 
 ==============================================================================
 			Andere Eigenschaften
-
- ->	Ein Knopf zum Reset des Füllstands.
  
  ->	Potenziometer zur Kontraststeuerung des Displays.(Uebernommen)
 
