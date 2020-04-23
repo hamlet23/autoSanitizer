@@ -1,5 +1,8 @@
 #include <LiquidCrystal.h>
+#include <Servo.h> 
 #define pirPin 10
+Servo sservo;  // create servo object to control a servo
+int pos = 0;    // variable to store the servo position 
 int calibrationTime = 30;
 long unsigned int lowIn;
 long unsigned int pause = 5000;
@@ -10,48 +13,44 @@ int i =0;
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(pirPin, INPUT);
-  lcd.begin(16, 2);
-  lcd.print("Initializing");
-  while(i<=100){
+	Serial.begin(9600);
+	pinMode(pirPin, INPUT);
+	sservo.attach(7);  // attaches the servo on pin 9 to the servo object
+	lcd.begin(16, 2);
+	lcd.print("Initializing");
+	while(i<=100) {
   		lcd.setCursor(0,1);
-		  lcd.print(i);
-    	lcd.setCursor(3,1);
-    	lcd.print("%");
-    	i++;
-    	
-  	}
-    delay(2000);
-  	lcd.clear();
-}
-
+		lcd.print(i);
+    		lcd.setCursor(3,1);
+    		lcd.print("%");
+    		i++; }
+  	delay(2000);
+  	lcd.clear(); }
 void loop() {
-	PIRSensor();
-}
-
+	PIRSensor(); }
 void PIRSensor() {
-   if(digitalRead(pirPin) == HIGH) {
-      if(lockLow) {
-         PIRValue = 1;
-         lockLow = false;
-		 lcd.setCursor(0,0);
-         lcd.print("Motion detected.");
-         delay(50);
-      }
-      takeLowTime = true;
-    
-   }
-   if(digitalRead(pirPin) == LOW) {
-      if(takeLowTime){
-         lowIn = millis();takeLowTime = false;
-      }
-      if(!lockLow && millis() - lowIn > pause) {
-         PIRValue = 0;
-         lockLow = true;
-         lcd.setCursor(0,0);
-         lcd.print("Motion ended.");
-         delay(50);
-      }
-   }
-}
+	if(digitalRead(pirPin) == HIGH) {
+		if(lockLow) {
+         		PIRValue = 1;
+	 		lockLow = false;
+			lcd.setCursor(0,0);
+         		lcd.print("Motion detected.");
+	 		servo_motor();
+         		delay(50); }
+		takeLowTime = true; }
+	if(digitalRead(pirPin) == LOW) {
+      		if(takeLowTime){
+         		lowIn = millis();takeLowTime = false; }
+		if(!lockLow && millis() - lowIn > pause) {
+         		PIRValue = 0;
+         		lockLow = true;
+         		lcd.setCursor(0,0);
+         		lcd.print("Motion ended.");
+         		delay(50); } } }
+void servo_motor() {
+	for(pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees in steps of 1 degree 
+    		sservo.write(pos);           // tell servo to go to position in variable 'pos' 
+   		delay(15); }                 // waits 15ms for the servo to reach the position 
+	for(pos = 180; pos>=0; pos-=1) {     // goes from 180 degrees to 0 degrees                                
+		sservo.write(pos);           // tell servo to go to position in variable 'pos' 
+		delay(15); }                 // waits 15ms for the servo to reach the position 
