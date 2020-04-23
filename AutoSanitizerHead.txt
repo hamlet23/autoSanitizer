@@ -26,7 +26,7 @@
 ==============================================================================
 			Andere Eigenschaften
 
- ->	Zwei Knöpfe zum Reset des Füllstands und zum Ein- und Auszuschalten.
+ ->	Ein Knopf zum Reset des Füllstands.
  
  ->	Potenziometer zur Kontraststeuerung des Displays.(Uebernommen)
 
