@@ -7,17 +7,16 @@ A automatic sanitizer dispenser that's realized on a Arduino Board
 
 	FUNKTION
 
- ->	Beim auslösen des Sensors(PIR) wird ein Servo den Sprühkopf 2x drücken
-	und es werden 2 ml ausgegeben.
+ ->	When the sensor (PIR) is triggered, a servo will press the spray head twice
+	and 2 ml are dispensed.
 
- ->	Behälter hat 2 Liter / 0.002 Liter pro Betätigug = 1000 Betätigungen.
+ ->	Container has 2 liters / 0.002 liters per operation = 1000 operations.
  
- ->	Auf dem Display werden die verbleibenden Benutzungen angezeigt.
+ ->	The remaining uses are shown on the display.
  
- ->	Ein Knopf deint zum Reset der verbleibenden Benutzungen.
+ ->	A button is used to reset the remaining uses.
  
- ->	Potenziometer zur Kontraststeuerung des Displays.
- 
+ -> 	Potentiometer for contrast control of the display.
  
 ==============================================================================
 */
