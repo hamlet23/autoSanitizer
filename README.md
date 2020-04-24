@@ -21,7 +21,7 @@ A automatic sanitizer dispenser that's realized on a Arduino Board
 ==============================================================================
   ## Files
   
-  master.c == the code that you need for the arduino board
-  AutoSanitizer(Original).png == a picture of a potential Setup of the actual arduino board
-  LICENSE == a file where our license is documented
-  README.md == this file you're reading right now
+ -> master.c == the code that you need for the arduino board
+ -> AutoSanitizer(Original).png == a picture of a potential Setup of the actual arduino board
+ -> LICENSE == a file where our license is documented
+ -> README.md == this file you're reading right now
