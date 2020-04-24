@@ -48,6 +48,16 @@ void setup() // Class setup
   	lcd.print("Complete !"); // print string to lcd
   	delay(1000); // delay code by 1000 milliseconds
   	lcd.clear(); // clear lcd
+  	lcd.setCursor(0,0); // set cursor on lcd to position 0,0
+    lcd.print("Created by:"); //prints string to lcd
+    delay(500); // delays code by 500 milliseconds
+    lcd.clear(); // clears lcd
+    lcd.setCursor(0,0); // sets cursor on lcd to position 0,1
+    lcd.print("fr3zr"); // prints string to lcd
+    lcd.setCursor(0,1); // set cursor on lcd to position
+    lcd.print("SmokiestBeatman"); // prints string to lcd
+  	delay(2000); // delays code by 5000 milliseconds
+     lcd.clear(); // clears lcd
     rest_d(); // call class rest_d
     lcd.setCursor(0,0); // set cursor on lcd to position 0,0
   	lcd.print("AutoSanitizer"); // print string on lcd
