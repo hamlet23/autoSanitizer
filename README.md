@@ -1,11 +1,11 @@
 # AutoSanitizer
 A automatic sanitizer dispenser that's realized on a Arduino Board
 
-    V 1.0 / April 2020 / Modul 242                           
+    V 1.0 / April 2020                          
 
 ==============================================================================
 
-	FUNKTION
+	Functions
 
  ->	When the sensor (PIR) is triggered, a servo will press the spray head twice
 	and 2 ml are dispensed.
