@@ -1,23 +1,23 @@
 # AutoSanitizer
 A automatic sanitizer dispenser that's realized on a Arduino Board
 
+    V 1.0 / April 2020 / Modul 242                           
+
 ==============================================================================
 
-##				Eigenschaften
+			FUNKTION
 
- ->	Beim auslösen des Sensors wird ein Servo den Sprühkopf 2x drücken
+ ->	Beim auslösen des Sensors(PIR) wird ein Servo den Sprühkopf 2x drücken
 	und es werden 2 ml ausgegeben.
 
  ->	Behälter hat 2 Liter / 0.002 Liter pro Betätigug = 1000 Betätigungen.
-
- ->	(Realer Sprühkopf hat ein durchgang von 1 ml pro Betätigung.)
  
- ->	Auf dem Display wird Inhalt und Füllstand angezeigt.
-
- ->	Zwei Knöpfe zum Reset des Füllstands und zum Ein- und Auszuschalten.
+ ->	Auf dem Display werden die verbleibenden Benutzungen angezeigt.
  
- ->	Potenziometer zur Kontraststeuerung des Displays.(Uebernommen)
-
- ->	Display ist mit einem Flachbandkabel verbunden.
+ ->	Ein Knopf deint zum Reset der verbleibenden Benutzungen.
+ 
+ ->	Potenziometer zur Kontraststeuerung des Displays.
+ 
  
 ==============================================================================
+*/
