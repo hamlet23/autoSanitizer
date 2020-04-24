@@ -5,7 +5,7 @@ A automatic sanitizer dispenser that's realized on a Arduino Board
 
 ==============================================================================
 
-			FUNKTION
+	FUNKTION
 
  ->	Beim auslösen des Sensors(PIR) wird ein Servo den Sprühkopf 2x drücken
 	und es werden 2 ml ausgegeben.
